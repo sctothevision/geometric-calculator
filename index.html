@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>калькулятор фигур</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="form-group">
+          <label for="square-side">Сторона квадрата:</label>
+          <input type="number" id="square-side" placeholder="Сторона квадрата">
+          <button onclick="calculateSquare()">Рассчитать квадрат</button>
+          <div class="result" id="square-result"></div>
+        </div>
+        <div class="form-group">
+          <label for="rectangle-width">Ширина прямоугольника:</label>
+          <input type="number" id="rectangle-width" placeholder="Ширина">
+          <label for="rectangle-height">Высота прямоугольника:</label>
+          <input type="number" id="rectangle-height" placeholder="Высота">
+          <button onclick="calculateRectangle()">Рассчитать прямоугольник</button>
+          <div class="result" id="rectangle-result"></div>
+        </div>
+        <div class="form-group">
+          <label for="circle-radius">Радиус круга:</label>
+          <input type="number" id="circle-radius" placeholder="Радиус">
+          <button onclick="calculateCircle()">Рассчитать круг</button>
+          <div class="result" id="circle-result"></div>
+        </div>
+        <div class="form-group">
+          <label for="triangle-side1">Сторона A:</label>
+          <input type="number" id="triangle-side1" placeholder="Сторона A">
+          <label for="triangle-side2">Сторона B:</label>
+          <input type="number" id="triangle-side2" placeholder="Сторона B">
+          <label for="triangle-side3">Сторона C:</label>
+          <input type="number" id="triangle-side3" placeholder="Сторона C">
+          <button onclick="calculateTriangle()">Рассчитать треугольник</button>
+          <div class="result" id="triangle-result"></div>
+        </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
